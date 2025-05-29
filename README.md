@@ -111,3 +111,4 @@ sudo update-alternatives --config x-terminal-emulator
 * Configuration examples: [https://github.com/alacritty/alacritty/blob/master/alacritty.yml](https://github.com/alacritty/alacritty/blob/master/alacritty.yml)
 * Nerd Fonts for better glyph support: [https://www.nerdfonts.com/](https://www.nerdfonts.com/)
 * How To Make Your Boring macOS Terminal Amazing With Alacritty: [https://youtu.be/uOnL4fEnldA?si=aJhCkE3n4-4Vy8dE](https://youtu.be/uOnL4fEnldA?si=aJhCkE3n4-4Vy8dE)
+* Alacritty: [[Alacritty Terminal](https://youtu.be/n3CWYPGjVns?si=KqB1z-wtCyyq1cpw)
