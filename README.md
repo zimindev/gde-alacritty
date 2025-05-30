@@ -1,47 +1,47 @@
-## 🧭 Alacritty Setup Guide
+Got it! Here's the optimized and clean `README.md` in **English** for your GitHub Alacritty setup guide, using the **TOML** config format:
 
-### ✅ What is Alacritty?
+````markdown
+# 🧭 Alacritty Setup Guide (TOML Config)
 
-Alacritty is a fast, GPU-accelerated terminal emulator focused on simplicity and performance. It runs on Linux, macOS, and Windows and uses a YAML file for configuration.
+## ✅ What is Alacritty?
+
+**Alacritty** is a fast, GPU-accelerated terminal emulator focused on performance and simplicity. As of version **0.12.0**, Alacritty uses **TOML** instead of YAML for configuration.
 
 ---
 
-### 🖥️ Step 1: Install Alacritty
+## 🖥️ Installation
 
-#### **Linux (Debian/Ubuntu):**
-
+### Debian/Ubuntu
 ```bash
 sudo apt install alacritty
-```
+````
 
-#### **Arch Linux:**
+### Arch Linux
 
 ```bash
 sudo pacman -S alacritty
 ```
 
-#### **Fedora:**
+### Fedora
 
 ```bash
 sudo dnf install alacritty
 ```
 
-#### **Windows:**
-
-* Download the latest Alacritty release from [GitHub](https://github.com/alacritty/alacritty/releases).
-* Extract the zip and run `alacritty.exe`.
-
-#### **macOS:**
+### macOS
 
 ```bash
 brew install alacritty
 ```
 
+### Windows
+
+* Download the latest release: [Alacritty Releases](https://github.com/alacritty/alacritty/releases)
+* Extract the `.zip` and run `alacritty.exe`
+
 ---
 
-### 🚀 Step 2: Run Alacritty
-
-* Open a terminal and type:
+## 🚀 Launch Alacritty
 
 ```bash
 alacritty
@@ -49,155 +49,19 @@ alacritty
 
 ---
 
-### ⚙️ Step 3: Configure Alacritty
+## ⚙️ Configuration
 
-* Configuration is done via a YAML file located at:
-
-```bash
-~/.config/alacritty/alacritty.yml
-```
-
-* If the file doesn’t exist, copy the example config from the repo or create your own.
-
----
-
-### ✍️ Step 4: Basic Configuration Example
-
-Create or edit `~/.config/alacritty/alacritty.yml` with:
-
-```yaml
-font:
-  normal:
-    family: "JetBrainsMono Nerd Font"
-  size: 12.0
-
-colors:
-  primary:
-    background: '0x1e1e2e'
-    foreground: '0xcdd6f4'
-
-cursor:
-  style: Beam
-```
-
----
-
-### 🔑 Step 5: Customize Keybindings (Optional)
-
-You can add or override keybindings in the config file. For example:
-
-```yaml
-key_bindings:
-  - { key: V,        mods: Control|Shift, action: Paste        }
-  - { key: C,        mods: Control|Shift, action: Copy         }
-```
-
----
-
-### 🔄 Step 6: Make Alacritty Your Default Terminal (Optional)
-
-#### On Linux (example with GNOME Terminal alternatives):
-
-```bash
-sudo update-alternatives --install /usr/bin/x-terminal-emulator x-terminal-emulator /usr/bin/alacritty 50
-sudo update-alternatives --config x-terminal-emulator
-```
-
----
-
-### 📚 Additional Resources
-
-* Official GitHub: [https://github.com/alacritty/alacritty](https://github.com/alacritty/alacritty)
-* Configuration examples: [https://github.com/alacritty/alacritty/blob/master/alacritty.yml](https://github.com/alacritty/alacritty/blob/master/alacritty.yml)
-* Nerd Fonts for better glyph support: [https://www.nerdfonts.com/](https://www.nerdfonts.com/)
-* How To Make Your Boring macOS Terminal Amazing With Alacritty: [https://youtu.be/uOnL4fEnldA?si=aJhCkE3n4-4Vy8dE](https://youtu.be/uOnL4fEnldA?si=aJhCkE3n4-4Vy8dE)
-* Alacritty: [[Alacritty Terminal](https://youtu.be/n3CWYPGjVns?si=KqB1z-wtCyyq1cpw)
-
-Yes, starting from **Alacritty 0.12.0** (released around late 2023), the configuration format **migrated from YAML to TOML**.
-
-So now Alacritty uses a **`alacritty.toml`** file instead of `alacritty.yml`.
-
----
-
-### What this means for you:
-
-* Your old YAML config **won't work**.
-* You need to convert your config from **YAML to TOML** format.
-* The config file is now typically at:
+The main config file is located at:
 
 ```
 ~/.config/alacritty/alacritty.toml
 ```
 
----
-
-### Quick migration example:
-
-**Old YAML config snippet:**
-
-```yaml
-font:
-  normal:
-    family: "JetBrainsMono Nerd Font"
-  size: 12.0
-
-colors:
-  primary:
-    background: '0x1e1e2e'
-    foreground: '0xcdd6f4'
-```
+If it doesn’t exist, you can create it or copy the official example from [here](https://github.com/alacritty/alacritty/blob/master/alacritty.toml).
 
 ---
 
-**New TOML equivalent:**
-
-```toml
-[font.normal]
-family = "JetBrainsMono Nerd Font"
-size = 12.0
-
-[colors.primary]
-background = "0x1e1e2e"
-foreground = "0xcdd6f4"
-```
-
----
-
-## 🧭 Alacritty Setup Guide (TOML Config)
-
-### ✅ What is Alacritty?
-
-Alacritty is a GPU-accelerated terminal emulator, now configured with a TOML file format for better clarity and structure.
-
----
-
-### 🖥️ Step 1: Install Alacritty
-
-*(same as before, no change)*
-
----
-
-### 🚀 Step 2: Run Alacritty
-
-```bash
-alacritty
-```
-
----
-
-### ⚙️ Step 3: Configure Alacritty with `alacritty.toml`
-
-* Config location:
-
-```
-~/.config/alacritty/alacritty.toml
-```
-
-* If missing, create the file or copy the example config from the Alacritty GitHub repo.
-
----
-
-### ✍️ Step 4: Basic TOML Configuration Example
+## ✍️ Basic Configuration Example (`alacritty.toml`)
 
 ```toml
 [font.normal]
@@ -214,7 +78,7 @@ style = "Beam"
 
 ---
 
-### 🔑 Step 5: Customize Keybindings (Optional)
+## 🔑 Custom Key Bindings (Optional)
 
 ```toml
 [[key_bindings]]
@@ -228,3 +92,21 @@ mods = "Control|Shift"
 action = "Copy"
 ```
 
+---
+
+## 🔄 Set Alacritty as Default Terminal (Linux)
+
+```bash
+sudo update-alternatives --install /usr/bin/x-terminal-emulator x-terminal-emulator /usr/bin/alacritty 50
+sudo update-alternatives --config x-terminal-emulator
+```
+
+---
+
+## 📚 Additional Resources
+
+* 🔗 [Official GitHub](https://github.com/alacritty/alacritty)
+* 🔗 [alacritty.toml Example](https://github.com/alacritty/alacritty/blob/master/alacritty.toml)
+* 🔗 [Nerd Fonts](https://www.nerdfonts.com/)
+* ▶️ [Make Alacritty Amazing (macOS)](https://youtu.be/uOnL4fEnldA)
+* ▶️ [Alacritty Overview](https://youtu.be/n3CWYPGjVns)
