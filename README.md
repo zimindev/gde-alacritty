@@ -1,7 +1,4 @@
-Got it! Here's the optimized and clean `README.md` in **English** for your GitHub Alacritty setup guide, using the **TOML** config format:
-
-````markdown
-# 🧭 Alacritty Setup Guide (TOML Config)
+# 📟 Alacritty Setup Guide (TOML Config)
 
 ## ✅ What is Alacritty?
 
